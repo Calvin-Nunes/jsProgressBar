@@ -60,8 +60,8 @@
             var f = a(d).find('.progressGauge-progress');
             var t = a(d).find('.progressGauge-progressbar');
             var h = a(d).find('.progressGauge-displaybox');
-            var l = a(d).find('.progressGauge-displaylabel');
-            var m = a(d).find('.progressGauge-displaytitle');
+            var l = a(d).find('.progressGauge-displayLabel');
+            var m = a(d).find('.progressGauge-displayTitle');
             var j = b.barRadius - b.fillRadius;
             var u = {
                 left: 'flex-start',
