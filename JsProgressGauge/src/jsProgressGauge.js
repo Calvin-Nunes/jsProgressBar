@@ -176,19 +176,34 @@
             setValue: c,
         };
     };
-}(jQuery), $('[line-progressbar]').each(function () {
+}(jQuery), $('[js-progressbar]').each(function () {
     function c() {
         a.JsProgressGauge({
-            value: a.data('value'),
+            value: a.data('value'),            
+            type: a.data('type'),
+            showLabel: a.data('showLabel'),
+            showTitle: a.data('showTitle'),
+            title: a.data('title'),,
+            duration: a.data('duration'),
             labelUnit: a.data('labelUnit'),
             animated: a.data('animated'),
-            showLabel: a.data('showcount'),
-            duration: a.data('duration'),
-            fillBackgroundColor: a.data('progress-color'),
-            backgroundColor: a.data('bg-color'),
-            radius: a.data('radius'),
-            height: a.data('height'),
-            width: a.data('width')
+            fillBackgroundColor: a.data('fillBackgroundColor'),
+            backgroundColor: a.data('backgroundColor'),
+            barRadius: a.data('barRadius'),
+            fillRadius: a.data('fillRadius'),
+            labelAlignment: a.data('labelAlignment'),
+            labelPosition: a.data('labelPosition'),
+            labelFontSize: a.data('labelFontSize'),
+            titleFontSize: a.data('titleFontSize'),
+            labelColor: a.data('labelColor'),
+            titleColor: a.data('titleColor'),
+            labelFormatter: a.data('labelFormatter'),
+            barHeight: a.data('barHeight'),
+            fillSize: a.data('fillSize'),
+            width: a.data('width'),
+            boldLabels: a.data('boldLabels'),
+            rotateLabels: a.data('rotateLabels'),
+            onFinish: a.data('finish')
         });
     }
     var a = $(this);
